@@ -1,0 +1,377 @@
+/* general foundational styles */
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+    font-family: 'Abel', sans-serif !important;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    margin: auto;
+}
+
+span {
+    color:whitesmoke
+}
+
+.messages {
+    padding: 1rem;
+    border-radius: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.messages .success {
+    background-color: rgba(0, 225, 0, 0.1);
+    font-size:2rem;
+    border-radius:1rem;
+    padding-right:1rem;
+    padding-left:1rem;
+}
+.messages .danger {
+    background-color: rgba(255, 0, 0, 0.1);
+    font-size:2rem;
+    border-radius:1rem;
+    padding-right:1rem;
+    padding-left:1rem;
+}
+
+.home-body {
+    display: flex;
+    justify-content: center;
+}
+
+#indentation {
+    margin-bottom: 100px;
+    margin-right:0px;
+}
+
+@media only screen and (max-width: 576px) {
+    ul {
+    list-style-type: none;
+    }
+    #stories {
+    margin-left:40px;
+    }
+}
+
+
+/* card styles for each news story*/
+.no-stories {
+    /* padding:2rem; */
+    margin-left:2rem;
+    margin-right:2rem;
+    text-align:center;
+    display:flex;
+}
+
+.row {
+    margin: auto;
+}
+
+.container {
+    background: #242424;
+    border-radius: 30px;
+    margin-bottom:2rem;
+}
+
+.card {
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+.card:hover {
+    border-width: 1px;
+    background: #ade7ff;
+    margin: auto;
+    box-shadow: 1px 1px 10px 10px #95eeee;
+}
+
+.card-body {
+    background: #3d3d3d;
+    border-radius: 10px;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+
+.card-body:hover {
+    background: rgb(65, 65, 65)
+}
+
+.results {
+    color:whitesmoke;
+    margin:auto;
+    }
+
+#date {
+    color:gainsboro;
+}
+
+#image {
+    margin-bottom: 10px;
+}
+
+
+/* more specific card styles to adapt to the behavior of mobile devices*/
+
+
+@media only screen and (max-width: 768px) {
+    #left-b{
+        margin-bottom: 10px;
+        order: 1;
+        padding-right: 0px;
+    }
+    #image {
+        order: 0;
+        width: 100%;
+    }
+    #right-b{
+        margin-bottom: 10px;
+        order: 1;
+        padding-left:0px;
+    }
+    
+}
+@media only screen and (max-width: 576px) {
+    .container {
+        justify-content: center;
+    }
+    #image {
+        margin-top: -20px;
+        order:0;
+    }
+    #search{
+        display:none;
+    }
+}
+
+
+/* form styling */
+
+h1 {
+    color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form {
+    color: whitesmoke;
+}
+
+.form-alert {
+        margin: 20px;
+}
+
+.submit-b {
+    margin-bottom:20px;
+}
+
+.demo-user {
+    text-align:center;
+    margin-bottom:20px;
+}
+#content {
+    color:white;
+    margin-top: 5px;
+}
+
+.headline {
+    margin-top: 12px;
+    color:gainsboro;
+}
+
+.headline:hover {
+    text-decoration: none;
+    color: #a3a3a3;
+    border-radius: 40px;
+}
+
+
+/* navbar styles*/
+
+
+.navbar {
+    background-color: black;
+    color:rgb(65, 65, 65);
+}
+
+.close {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+.navbar-toggler {
+    margin-right:10px;
+}
+
+.nav-item {
+    margin:auto;
+    color: #f2f2f2; 
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 0px;
+    text-decoration: none;
+    font-size: 17px;
+    transition-duration: 0.25s;
+    font-size:16px;
+}
+
+.nav-item:hover {
+    background-color:rgb(119, 119, 119) ;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-nav{
+    margin:0px;
+}
+
+#dropdown-item {
+    display: inline;
+    text-decoration: none;
+    padding-right:10px;
+}
+
+.query-link {
+    display: inline;
+    text-decoration: none;
+    color:#3d3d3d;
+}
+
+
+#search{
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #search{
+        display:none;
+        order:0;
+    }
+}
+
+#nav-msg-spc {
+margin-top: 100px;
+}
+
+
+/* Home-Page */
+
+
+#home {
+    margin: auto;
+    margin-top: 100px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+
+h4 {
+    /*used throughout app as headlines*/
+    color:white;
+    margin:auto
+}
+
+h5 {
+    color:white;
+    margin:auto
+}
+
+p {
+    color:whitesmoke
+}
+
+/* Right (category-slideshow)*/
+
+#slideshows {
+    padding:0px;
+}
+
+#slideshow {
+    margin:auto;
+    margin-bottom:15px;
+    padding:0px;
+}
+
+.d-block {
+    /*image*/
+    width: 250px;
+    height: 175px;
+    object-fit: contain
+}
+
+#slide-counter {
+    padding:0px;
+ }
+
+h3 a{
+    text-decoration: none;
+    color:white
+}
+
+/*Left*/
+
+.col-md-7 {
+    /* column left for overall container, contains info */
+    padding:0px;
+}
+
+.announce {
+    /*div for columns in cards*/
+    padding:3px;
+    margin:3px;
+}
+
+.heading {
+    /*larger header div that includes descriptive text*/
+    margin: 10px;
+    text-align: center;
+}
+
+.heading h4 {
+    /*eg, non-user, user, upcoming*/
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom:.5rem;
+}
+
+.carousel-caption {
+	text-align:justify;
+	padding:0px;
+	background:rgba(0,0,0,0.4);
+    font-size: 1.25vw;
+    margin-bottom:2rem;
+}
+
+.category {
+    padding:0.5rem;
+    color:white;
+}
+
+.category:hover {
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #slideshows{
+        padding-top: 1rem;
+    }
+    .carousel-caption {
+        text-align:justify;
+        padding:0px;
+        background:rgba(0,0,0,0.4);
+        font-size: 2vw;
+        margin-bottom:2rem;
+    }
+    .caption {
+        text-align:justify;
+    }
+}
